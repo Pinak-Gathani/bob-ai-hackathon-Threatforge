@@ -1,0 +1,6 @@
+[
+  {"source":"SIEM","payload":{"event":"Privileged account login anomaly","src_ip":"203.0.113.77","dest_ip":"10.0.2.44","host":"WS-OPS-17","severity":"HIGH","user":"ops_admin"}},
+  {"source":"EDR","payload":{"event":"PowerShell encoded command execution","src_ip":"203.0.113.77","dest_ip":"10.0.2.44","host":"WS-OPS-17","severity":"HIGH","process":"powershell.exe -enc AAECAwQ="}},
+  {"source":"Network Sensor","payload":{"event":"HTTPS beacon to suspicious C2","src_ip":"203.0.113.77","dest_ip":"10.0.2.44","host":"WS-OPS-17","severity":"CRITICAL","destination":"203.0.113.77:443"}},
+  {"source":"Threat Intel","payload":{"event":"Known malicious C2 indicator match","src_ip":"203.0.113.77","dest_ip":"10.0.2.44","host":"WS-OPS-17","severity":"HIGH","indicator":"203.0.113.77","confidence":97}}
+]
