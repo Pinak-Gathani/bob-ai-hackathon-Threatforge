@@ -1,0 +1,104 @@
+{
+  "model": "XGBClassifier",
+  "algorithm": "XGBoost",
+  "task": "3-class session classification",
+  "classes": [
+    "FP",
+    "Needs Investigation",
+    "TP"
+  ],
+  "training_samples": 12728,
+  "validation_samples": 2198,
+  "test_samples": 2272,
+  "unique_users_train": 1275,
+  "unique_users_validation": 225,
+  "unique_users_test": 225,
+  "split": "GroupShuffleSplit by user_id; 70/15/15; test untouched until final evaluation",
+  "feature_count": 60,
+  "categorical_features": [
+    "user_role",
+    "source",
+    "location",
+    "protocol",
+    "mitre_technique"
+  ],
+  "event_enriched": true,
+  "event_feature_count": 29,
+  "hyperparameters": {
+    "n_estimators": 450,
+    "max_depth": 5,
+    "learning_rate": 0.03,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.4,
+    "reg_lambda": 4.0
+  },
+  "validation_macro_f1": 0.9899746941353351,
+  "test_accuracy": 0.9907570422535211,
+  "test_macro_f1": 0.9882706400346463,
+  "test_weighted_f1": 0.990760125794302,
+  "test_macro_precision": 0.9881264221847011,
+  "test_macro_recall": 0.9884167647708298,
+  "train_macro_f1": 0.9992999064540703,
+  "generalization_gap": 0.011029266419424033,
+  "confusion_matrix": [
+    [
+      971,
+      4,
+      0
+    ],
+    [
+      5,
+      436,
+      5
+    ],
+    [
+      0,
+      7,
+      844
+    ]
+  ],
+  "classification_report": {
+    "FP": {
+      "precision": 0.9948770491803278,
+      "recall": 0.9958974358974358,
+      "f1-score": 0.9953869810353665,
+      "support": 975.0
+    },
+    "Needs Investigation": {
+      "precision": 0.9753914988814317,
+      "recall": 0.9775784753363229,
+      "f1-score": 0.9764837625979843,
+      "support": 446.0
+    },
+    "TP": {
+      "precision": 0.9941107184923439,
+      "recall": 0.9917743830787309,
+      "f1-score": 0.9929411764705882,
+      "support": 851.0
+    },
+    "accuracy": 0.9907570422535211,
+    "macro avg": {
+      "precision": 0.9881264221847011,
+      "recall": 0.9884167647708298,
+      "f1-score": 0.9882706400346463,
+      "support": 2272.0
+    },
+    "weighted avg": {
+      "precision": 0.9907649440532231,
+      "recall": 0.9907570422535211,
+      "f1-score": 0.990760125794302,
+      "support": 2272.0
+    }
+  },
+  "label_counts": {
+    "FP": 6309,
+    "TP": 5765,
+    "Needs Investigation": 2926
+  },
+  "source_files": {
+    "session": "ThreatForge_XGBoost_Session_Dataset_15000.csv",
+    "events": "ThreatForge_Event_Log_Dataset_80000.csv"
+  }
+}

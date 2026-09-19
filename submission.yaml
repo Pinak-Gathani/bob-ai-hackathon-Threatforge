@@ -1,0 +1,73 @@
+# =============================================================================
+# HACKATHON SUBMISSION METADATA
+# =============================================================================
+
+team:
+  name: "ThreatForge"
+  track: "AI"
+  lead:
+    name: "Vasta Odedara"
+    email: "d25ce151@charusat.edu.in"
+  members:
+    - name: "Pinak Gathani"
+      email: "d25ce162@charusat.edu.in"
+    - name: "Rupam Chavda"
+      email: "d25ce148@charusat.edu.in"
+    - name: "Krish Patel"
+      email: "d25ce166@charusat.edu.in"
+
+submission:
+  title: "ThreatForge — AI-Powered Threat Intelligence Correlation & Alert Prioritisation Assistant"
+
+  problem_statement: >
+    Security teams receive large numbers of alerts from multiple sources and
+    must manually normalise, correlate and prioritise them. Analysts need to
+    distinguish genuine threats from noise, understand the MITRE ATT&CK context,
+    and quickly determine what requires immediate investigation.
+
+  solution_summary: >
+    ThreatForge is a threat intelligence command center that ingests and
+    normalises multi-source alerts, correlates related activity into incidents,
+    prioritises risk, maps behaviour to MITRE ATT&CK, and generates evidence-first
+    AI Investigation and BLUF summaries. IBM Bob is integrated through MCP tools so
+    the AI investigation workflow can retrieve live ThreatForge incident, alert,
+    indicator, investigation and MITRE context.
+
+  key_features:
+    - "Multi-source security alert ingestion and normalisation"
+    - "Entity-aware alert correlation and incident creation"
+    - "Risk and priority scoring for investigation triage"
+    - "MITRE ATT&CK mapping with threat-intelligence context"
+    - "Evidence-backed AI Investigation and commander BLUF reporting"
+    - "Incident-level email/mobile notification and escalation workflow"
+    - "IBM Bob MCP integration for live analyst context"
+
+  tech_stack:
+    languages: ["Python", "TypeScript", "HTML", "CSS"]
+    frameworks: ["FastAPI", "React", "Vite", "SQLAlchemy", "Pydantic"]
+    ibm_technologies: ["IBM Bob", "Model Context Protocol (MCP)"]
+    databases: ["SQLite"]
+    other: ["Pytest", "Git", "GitHub", "Tailwind CSS", "Recharts", "Lucide"]
+
+  what_we_are_most_proud_of: >
+    The complete evidence-to-decision workflow: multi-source alert ingestion,
+    correlation, prioritisation, MITRE ATT&CK context, investigation evidence,
+    BLUF reporting, incident-level notification/escalation, and a genuine
+    IBM Bob MCP integration that gives the AI investigation workflow structured
+    access to live ThreatForge security context.
+
+  known_limitations: >
+    The hackathon demo uses simulated security alert data rather than classified
+    production feeds. SQLite is used for the demo deployment, and production
+    authentication, multi-user controls and deployment hardening would require
+    additional work. Analyst validation remains necessary before operational
+    response.
+
+artifacts:
+  source_code: "src/"
+  setup_guide: "docs/setup-guide.md"
+  architecture_doc: "docs/architecture.md"
+  demo_video: "demo/demo-video-link.txt"
+  live_demo: "demo/live-demo-url.txt"
+  screenshots: "demo/screenshots/"
+  presentation: "presentation/"

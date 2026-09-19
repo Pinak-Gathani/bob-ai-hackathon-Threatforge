@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "threatforge": {
+      "command": "python",
+      "args": ["src/backend/mcp_server.py"],
+      "cwd": ".",
+      "alwaysAllow": [
+        "get_incident",
+        "get_correlated_alerts",
+        "get_investigation",
+        "search_indicator",
+        "get_mitre_coverage"
+      ],
+      "disabled": false
+    }
+  }
+}
